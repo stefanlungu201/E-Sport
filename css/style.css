@@ -73,7 +73,7 @@ p {
 
 .intro-vidio{
     display: block;
-    height: 50vh;
+    max-height: 50vh;
     margin: 40px auto;
     max-width: 100%;
     border-radius: 8px;
@@ -149,5 +149,77 @@ p {
     line-height: 200%;
     list-style: linear-gradient( #ff533d, #ff533d);
 }
-
+.maps{
+    width: 100%;
+    max-width: 480px;
+    height: 322px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+.centered {
+    text-align: center;
+}
+.contact-form{
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: 2px solid #ff533d;
+    margin-bottom: 15px;
+    max-width: 480px;
+    padding: 5px 15px 30px 15px;
+}
+.contact-form input, .contact-form textarea{
+    display: block;
+    width: 90%;
+    margin: 15px auto 0px auto;
+    resize: none;
+    font-family: inherit;
+    padding: 3px;
+    font-size: 16px;
+}
 /* daptareapentru pentru mobil */
+#menu-btn{
+    color: white;
+    font-size: 27px;
+    position: absolute;
+    right: 25px;
+    display: none;
+    top: 23px;
+}
+
+.show{
+    display: block !important;
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 16px;
+    }
+
+    [class^="col-"]{
+        width: 100%;
+    }
+
+    main{
+        margin: 0px;
+        padding: 10px 15px 20px 15px;
+    }
+
+    aside{
+        display: none;
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .gallery img {
+        width: 130px;
+        height: 130px;
+
+    }
+
+    #menu-btn{
+        display: block;
+    }
+}
+
